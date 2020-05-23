@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+    </style>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>4Geeks Academy</title>
 </head>
 <body>
 <form>
-<!-- your code here -->
+    <table style="width:30%">
+        <tr style="background-color: #C496EA;">
+          <th style="width: 50%;">Firstname</th>
+          <th style="width: 50%;">Lastname</th> 
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><input style="width: 99%;" type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+          <td>Sex</td>
+          <td>
+            <input type="radio" name="sex" id="male">Male
+            <br>
+            <input type="radio" name="sex" id="female">Female
+          </td>
+        </tr>
+        <tr>
+          <td>Eye volor</td>
+          <td>
+            <select name="select">
+                <option value="castaño" selected>Castaño</option> 
+                <option value="ambar">Ambar</option>
+                <option value="avellana">Avellana</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+                <option value="gris">Gris</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+            <td>Check all that apply</td>
+            <td>
+                <input type="checkbox" name="feet" id="feet">Over 6 feet tall
+                <br>
+                <input type="checkbox" name="pounds" id="pounds">Over 200 punds
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Describe your athletic ability:
+                <br>
+                <input style="width: 99%; height: 80px;" type="text" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button type="button">Enter my information</button>
+            </th>
+        </tr>
+      </table>
 </form>
 </body>
 </html>
